@@ -1,7 +1,7 @@
 export default async function Home() {
   return (
     <>
-      <h1>Home Page Test</h1>
+      <h1>Home Page Test 1</h1>
     </>
   )
 }
