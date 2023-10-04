@@ -39,12 +39,12 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
 
   const formattedDuration =
     years > 0
-      ? `${years} ano${years > 1 ? 's' : ''}${
+      ? `${years} year${years > 1 ? 's' : ''}${
           monthsRemaining > 0
-            ? ` e ${monthsRemaining} mes${monthsRemaining > 1 ? 'es' : ''}`
+            ? ` and ${monthsRemaining} month${monthsRemaining > 1 ? 's' : ''}`
             : ''
         }`
-      : `${months} mes${months > 1 ? 'es' : ''}`
+      : `${months} month${months > 1 ? 's' : ''}`
 
   return (
     <motion.div
