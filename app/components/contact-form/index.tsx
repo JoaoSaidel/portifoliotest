@@ -29,8 +29,8 @@ export const ContactForm = () => {
         <section id="contact" className="py-16 px-6 md:py-32 flex items-center justify-center bg-gray-950">
             <div className="w-full max-w-[420px] mx-auto">
                 <SectionTitle
-                    subtitle="contato"
-                    title="Vamos trabalhar juntos? Entre em contato"
+                    subtitle="contact"
+                    title="Let's work together? Contact me"
                     className="items-center text-center"
                 />
 
@@ -39,7 +39,7 @@ export const ContactForm = () => {
                 onSubmit={handleSubmit(onSubmit)}
                 >
                 <input
-                    placeholder="Nome"
+                    placeholder="Name"
                     className="w-full h-14 bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-emerald-500"
                     {...register('name')}
                 />
@@ -50,14 +50,14 @@ export const ContactForm = () => {
                     {...register('email')}
                 />
                 <textarea
-                    placeholder="Mensagem"
+                    placeholder="Message"
                     className="resize-none w-full h-[138px] bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-emerald-500"
                     maxLength={500}
                     {...register('message')}
                 /> 
 
                 <Button className="w-max mx-auto mt-6 shadow-button">
-                    Enviar Mensagem
+                    Send Message
                     <HiArrowNarrowRight size={18} />
                 </Button>              
             </form>

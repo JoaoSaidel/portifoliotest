@@ -4,10 +4,11 @@ import { ProjectCard } from "./project-card"
 import { Link } from '@/app/components/link'
 import { HiArrowNarrowRight } from "react-icons/hi"
 
+
 export const HighlightedProjects = () => {
     return (
         <section className="container py-16">
-            <SectionTitle subtitle="destaques" title="Projetos em destaque" />
+            <SectionTitle subtitle="highlights" title="Featured projects" />
             <HorizontalDivider className="mb-16"/>
 
             <div>
@@ -17,9 +18,9 @@ export const HighlightedProjects = () => {
                 <HorizontalDivider className="my-16"/>
 
                 <p className="flex items-center gap-1.5">
-                    <span className="text-gray-400"> Se interessou?</span>
+                    <span className="text-gray-400"> interested?</span>
                     <Link href="/projects" className="inline-flex">
-                        Ver todos
+                        See all
                         <HiArrowNarrowRight />
                     </Link>
                 </p>
